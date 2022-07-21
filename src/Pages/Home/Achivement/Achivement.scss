@@ -1,0 +1,257 @@
+@import "../../Variables/Variables.scss";
+
+.Achivement__container{
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 130px auto 100px auto;
+   
+    display: flex;
+    gap: 93px;
+    .achivement__card{
+        width: 65%;
+        height: 8rem;
+        display: flex;
+        gap: 24px;
+        .single__card{
+        width: 50%;
+        height: 340px;
+        background-image: linear-gradient(180deg, rgba(211, 211, 211, 0.119) 0%, rgba(175, 174, 174, 0.157) 100%);
+        border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .rating__container{
+            display: flex;
+            align-items: center;
+            margin-left: 44px;
+            margin-top: 46px;
+            gap: 12.5px;
+
+            .icon{
+                
+                height: 23px;
+                width: 22px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .rating{
+                h1{
+                    color: #0A093D;
+                 
+                }
+            }
+         
+        }
+        .member__wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left: 24px;
+            margin-top: 36px;
+           
+           
+           p{
+            margin-top: -8px;
+            margin-left: 16px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 18px;
+            letter-spacing: -0.02em;
+           
+            span{
+                color: $clr-blue;
+            }
+            }
+        }
+        p{
+            margin-top: 15px;
+            margin-left: 44px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #8C8C8C;
+          
+        }
+        .join{
+            display: flex;
+            gap: 12px;
+            margin-left: 44px;
+                margin-top: 30px;
+                color: $clr-blue;
+                cursor: pointer;
+            h3{
+                
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 16px;
+                
+                span{
+                 width: 16px;
+                 height: 16px;
+                //  svg{
+                    
+                //  }
+                }
+                
+            }
+            span{
+                svg{
+                    height: 15px;
+                    width: 22px;
+                }
+            }
+            &:hover{
+                color: #4A4A56;
+            }
+        }
+        
+            
+        &:hover{
+            box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.14);
+            background-color: white;
+        }
+        }
+    }
+
+    .achivement__content{   
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        p{
+            color: $clr-blue;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 18px;
+            // margin-top: 48px;
+            margin-bottom: 10px;
+        }
+
+        h1{
+            color: $primary-text-color;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 48px;
+            margin-bottom: 18px;
+        }
+
+        h3{
+            color: $secondary-text-color;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+        }
+        button{
+            margin-top: 38px;
+            background-color: $clr-blue;
+            color: $white;
+            width: 192px;
+            height: 58px;
+            border-radius: 14px;
+            border: none;
+            transition: 0.3s ease-in;
+            cursor: pointer;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+           span{
+     
+            width: 26px;
+            height: 20px;
+            svg{
+                margin-top: 1px;
+                width: 100%;
+                height: 100%;
+            }
+           }
+            &:hover{
+                box-shadow: 0px 10px 22px rgba(33, 123, 244, 0.26);
+            }
+        }
+
+    }
+}
+
+@media only screen and(max-width: 1100px) {
+    .Achivement__container{
+        gap: 50px;
+    }
+}
+@media only screen and(max-width: 1024px) {
+    .Achivement__container{
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+        margin-bottom: 15rem;
+        height: auto;
+        .achivement__card{
+            order: 2;
+            width: 100%;
+            justify-content: center;
+            gap: 50px;
+            
+            .single__card{
+                width: 45%;
+                
+            }
+        }
+
+        .achivement__content{
+            width: 90%;
+        }
+
+    }
+}
+
+@media only screen and(max-width: 668px){
+    .Achivement__container{
+
+        .achivement__card{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 16rem;
+            margin-bottom: 5rem;
+            .single__card{
+                width: 70%;
+                padding-bottom: 1.5rem;
+            }
+
+        }
+        .achivement__content{
+            button{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media only screen  and(max-width: 550px){
+    .Achivement__container{
+
+        .achivement__card{
+            
+            .single__card{
+                width: 100%;
+                padding-bottom: 1.5rem;
+            }
+
+        }
+        .achivement__content{
+            p{
+                line-height: 12px;
+            }
+            h1{
+                font-size: 28px;
+                line-height: 35px;
+            }
+        }
+    }
+}
