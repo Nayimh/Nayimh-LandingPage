@@ -3,7 +3,7 @@
 .details__container{
     
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
     padding: 0 30px;
     margin: auto;
 
@@ -207,6 +207,7 @@
     .details__container{
         flex-direction: column;
         gap: 5rem;
+        margin-top: 100px;
         .details__text-wrapper{
             width: 100%;
 
@@ -232,7 +233,8 @@
     .details__container{
         flex-direction: column;
         height: auto;
-        gap: 5rem;
+        margin-top: 50px;
+        gap: 2rem;
         .details__text-wrapper{
             width: 100%;
 
@@ -248,6 +250,7 @@
         }
         
         .details__img-wrapper{
+
             width: 100%;
             flex-direction: column;
             justify-content: space-around;

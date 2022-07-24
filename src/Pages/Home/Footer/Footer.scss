@@ -6,8 +6,8 @@
 
     .footer__wrapper{
         width: 100%;
-        max-width: 1200px;
-        padding: 15px;
+        max-width: 1230px;
+        padding: 0 30px;
         margin: 70px auto;
         display: flex;
         
@@ -184,6 +184,26 @@
                 }
                 .social_icon{
                     margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 500px){
+    .footer_section{
+        .footer__wrapper{
+            
+            .news__letter{
+                width: 100%;
+
+                input{
+                    width: 170px;
+                }
+                .cta_button{
+                    width: 100%;
+                    font-size: 14px;
+                    line-height: 14px;
                 }
             }
         }

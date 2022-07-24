@@ -6,7 +6,8 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    
+    height: calc(100vh - 90px);
     
     
     .hero__text--wrapper{
@@ -134,7 +135,13 @@
 
 @media only screen and(max-width: 668px){
     .Hero__section--container{
+
+
+
         .hero__text--wrapper{
+
+          
+
             .hero__text{
                 h1{
                     font-size: 35px;
@@ -142,6 +149,20 @@
                 }
                 p{
                     line-height: 24px;
+                }
+            }
+
+            .hero__btn--bottom{
+                gap: 14px;
+
+                .hero_btn-filled{
+                    font-size: 13px;
+                    font-weight: 13px;
+                }
+
+                .hero-btn-outline{
+                    font-size: 13px;
+                    font-weight: 13px;
                 }
             }
         }

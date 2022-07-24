@@ -31,10 +31,9 @@ function Features() {
               <img src={Image.icon1} alt="" />
             </div>
             <div className="card__text-wrapper">
-              <h2>Members, Friends</h2>
+              <h2>Groups</h2>
               <p>
-                Members, Friends Connection ( like followers ),
-                Private Message
+              Your users can create groups to let other users to join and talk
               </p>
             </div>
           </div>
@@ -43,10 +42,9 @@ function Features() {
               <img src={Image.icon2} alt="" />
             </div>
             <div className="card__text-wrapper">
-              <h2>Members, Friends</h2>
+              <h2>Forum</h2>
               <p>
-                Members, Friends Connection ( like followers ),
-                Private Message
+              Forum is ready by BBPress. Your users can make topics and talk.
               </p>
             </div>
           </div>
@@ -55,10 +53,9 @@ function Features() {
               <img src={Image.icon3} alt="" />
             </div>
             <div className="card__text-wrapper">
-              <h2>Members, Friends</h2>
+              <h2>Custom Module</h2>
               <p>
-                Members, Friends Connection ( like followers ),
-                Private Message
+              You can create Members, Groups Module. We already created 3 modules. It's by drag & drop live builder.
               </p>
             </div>
           </div>
@@ -67,10 +64,9 @@ function Features() {
               <img src={Image.icon4} alt="" />
             </div>
             <div className="card__text-wrapper">
-              <h2>Members, Friends</h2>
+              <h2>List Builder</h2>
               <p>
-                Members, Friends Connection ( like followers ),
-                Private Message
+              Members, Groups list can be modified by drag & drop live builder.
               </p>
             </div>
           </div>
@@ -79,10 +75,10 @@ function Features() {
               <img src={Image.icon5} alt="" />
             </div>
             <div className="card__text-wrapper">
-              <h2>Members, Friends</h2>
+              <h2>List Scroll Effects</h2>
               <p>
-                Members, Friends Connection ( like followers ),
-                Private Message
+              8 different scroll effects are ready.
+You can always change by your tastes.
               </p>
             </div>
           </div>
