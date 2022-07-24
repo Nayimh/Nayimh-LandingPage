@@ -4,7 +4,7 @@ import { Image } from "../../../../Image/index";
 
 import { FiSearch } from "react-icons/fi";
 import { FiMenu } from "react-icons/fi";
-import { GrClose } from "react-icons/gr";
+// import { GrClose } from "react-icons/gr";
 
 function Navbar() {
     return (

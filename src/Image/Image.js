@@ -32,6 +32,7 @@ import tickpng from './tick.png';
 import play from './googlePlay.png';
 import line from './line.png';
 import footerLogo from './footerlogo.png';
+import logoImg from './logoImg.png';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -68,5 +69,6 @@ export default {
     tickpng,
     play,
     line,
-    footerLogo
+    footerLogo,
+    logoImg
 }

@@ -1,12 +1,14 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
+import Menubar from '../Menubar/Menubar';
+// import Navbar from '../Navbar/Navbar';
 import './Banner.scss';
 import HeroSection from './HeroSection/HeroSection';
 
 function Banner() {
     return (
         <div className='banner__container'>
-            <Navbar />
+            {/* <Navbar /> */}
+            <Menubar/>
             <HeroSection/>
         </div>
     );
