@@ -7,8 +7,11 @@
     border-bottom: 1px solid rgba(33, 123, 244, 0.1);
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 555;
+    background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
     .navbar__container{
-       
         width: 100%;
         max-width: 1230px;
         padding: 0 30px;

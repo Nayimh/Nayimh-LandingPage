@@ -1,9 +1,22 @@
 import React from 'react';
 import './Team.scss';
-import { Image } from '../../../Image';
+
 import { IoIosCheckmark } from "react-icons/io";
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 function Team() {
+
+    const [membes, setMember] = useState([]);
+
+  
+
+    useEffect(() => {
+        fetch("./team.json")
+            .then(resp => resp.json())
+            .then(dt => setMember(dt))
+    })
+
   return (
       <div className='team__section'>
           <div className="team__section--container">
@@ -25,20 +38,24 @@ function Team() {
               </div>
 
               <div className="button_container">
-                  <div className="single__button">
+                  <div  className="single__button">
                       <button>Newest</button>
                   </div>
-                  <div className="single__button">
+                  <div  className="single__button">
                       <button>Popular</button>
                   </div>
-                  <div className="single__button">
+                  <div  className="single__button">
                       <button>Active</button>
                   </div>
               </div>
-              <div className="team__card__wrapper">
-                  <div className="single__team-card">
+              <div  className="team__card__wrapper">
+                  {
+                      
+                      membes.map(member => 
+                       
+                        <div key={member?.id}  className="single__team-card">
                       <div className="team__image">
-                          <img src={Image.person} alt="" />
+                          <img src={member.img} alt="" />
                             <IoIosCheckmark/>
                             
                          
@@ -46,64 +63,16 @@ function Team() {
                       
                       <div className="team__text">
                           <h2>
-                          Fahim Rahman
+                        {member?.name}
                           </h2>
                           <p>
-                          @rahman
+                         {member?.email}
                           </p>
                       </div>
                   </div>
-                  <div className="single__team-card">
-                      <div className="team__image">
-                          <img src={Image.person2} alt="" />
-                            <IoIosCheckmark/>
-                            
-                         
-                      </div>
-                      
-                      <div className="team__text">
-                          <h2>
-                          Kazi Rahman
-                          </h2>
-                          <p>
-                          @Rahman
-                          </p>
-                      </div>
-                  </div>
-                  <div className="single__team-card">
-                      <div className="team__image">
-                          <img src={Image.person3} alt="" />
-                            <IoIosCheckmark/>
-                            
-                         
-                      </div>
-                      
-                      <div className="team__text">
-                          <h2>
-                          Masterero Ali
-                          </h2>
-                          <p>
-                          @Master
-                          </p>
-                      </div>
-                  </div>
-                  <div className="single__team-card">
-                      <div className="team__image">
-                          <img src={Image.person4} alt="" />
-                            <IoIosCheckmark/>
-                            
-                         
-                      </div>
-                      
-                      <div className="team__text">
-                          <h2>
-                          Alia Karon
-                          </h2>
-                          <p>
-                          @Alia
-                          </p>
-                      </div>
-                  </div>
+                        )
+                  }
+                 
               </div>
               </div>
     </div>

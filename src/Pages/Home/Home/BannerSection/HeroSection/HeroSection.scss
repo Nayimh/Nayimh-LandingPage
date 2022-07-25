@@ -9,14 +9,14 @@
     
     height: calc(100vh - 90px);
     
-    
+   
     .hero__text--wrapper{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         width: 45%;
-        margin-left: 2px;
+        
         .hero__btn-top{
             width: 177px;
             height: 36px;
@@ -140,7 +140,7 @@
 
         .hero__text--wrapper{
 
-          
+          margin-top: 1.8rem;
 
             .hero__text{
                 h1{

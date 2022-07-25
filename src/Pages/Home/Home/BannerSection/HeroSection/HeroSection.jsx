@@ -24,6 +24,7 @@ function HeroSection() {
           <div className='hero__img-wrapper'>
               <img src={Image.hero} alt="" />
           </div>
+          
       </div>
   )
 }

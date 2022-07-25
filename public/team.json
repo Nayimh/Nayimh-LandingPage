@@ -1,0 +1,28 @@
+[
+  
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/jwL5kYq/person.png",
+        "name" : "Fahim Rahman",
+        "email" : "@rahman"
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/2FXd6gX/person2.png",
+        "name" : "Kazi Rahman",
+        "email" : "@Rahman"
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/Kh3MXQv/person3.png",
+        "name" : "Masterero Ali",
+        "email" : "@Master"
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/K9Z4Ykj/person4.png",
+        "name" : "Alia Karon",
+        "email" : "@Alia"
+    }
+
+]

@@ -8,10 +8,12 @@ import Team from '../TeamSection/Team';
 import Banner from './BannerSection/Banner';
 import Details from './Details/Details';
 import './Home.scss';
+import Menubar from './Menubar/Menubar';
 
 function Home() {
   return (
-      <div className='home__container'>
+    <div className='home__container'>
+      <Menubar/>
       <Banner />
       <Details />
       <Achivement />
