@@ -37,7 +37,7 @@
             display: flex;
             align-items: center;
             gap: 6px;
-
+            cursor: pointer;
             h1{
             // font-family: 'Poppins';
             font-style: normal;
@@ -68,13 +68,29 @@
                     line-height: 14px;
                     letter-spacing: 0.01em;
                     margin-right: 17px;
-             
-               p{
-                    color: $secondary-text-color;
-                    font-weight: 700;
+                    
+                  
+                    
+                    p{
+                        
+                        
+                        a{
+                            
+                            text-decoration: none;
+                            color: $secondary-text-color;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 14px;
+                        letter-spacing: 0.01em;
+                          
+                        &:active, &:hover{
+                            font-weight: 700;
                     font-size: 14px;
-                    line-height: 14px;
+                    line-height: 14px; 
                     letter-spacing: 0.01em;
+                    color: #2B2B39;
+                        }
+                    }
                }
                &:hover, &:active{
                 p{
@@ -132,7 +148,10 @@
                     font-size: 12px;
                     line-height: 14px;
                     cursor: pointer;
-                   
+                   a{
+                    text-decoration: none;
+                    color: $white;
+                   }
                     &:hover{
                         box-shadow: rgba(18, 75, 199, 0.35) 0px 5px 15px;
                     }

@@ -3,7 +3,7 @@ import "./Features.scss";
 import Image from "../../../Image/Image";
 function Features() {
   return (
-    <div className="feature__section">
+    <div id="blogs" className="feature__section">
       <div className="features__container">
         <div className="feature__heading-wrapper">
           <p>Our Community</p>

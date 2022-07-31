@@ -5,7 +5,7 @@ import { BsArrowRightShort } from 'react-icons/bs';
 
 function News() {
   return (
-      <div className='news__container'>
+      <div id='events' className='news__container'>
           <div className="news__header">
               <p>
               Get Our Aplication

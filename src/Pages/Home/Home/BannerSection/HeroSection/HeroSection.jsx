@@ -3,7 +3,7 @@ import "./HeroSection.scss";
 import { Image } from '../../../../../Image/index';
 function HeroSection() {
   return (
-      <div className='Hero__section--container'>
+      <div id='banner' className='Hero__section--container'>
           <div className='hero__text--wrapper'>
               <button className="hero__btn-top">
                   <p>Netbook community</p>

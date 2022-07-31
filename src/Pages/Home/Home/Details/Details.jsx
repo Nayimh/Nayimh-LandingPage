@@ -3,7 +3,7 @@ import './Details.scss';
 import { Image } from '../../../../Image/index';
 function Details() {
     return (
-        <div className='details__container'>
+        <div id='details' className='details__container'>
             <div className='details__text-wrapper'>
                 <p>Whats Netboks?</p>
                 <h2>
